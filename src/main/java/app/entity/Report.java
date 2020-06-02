@@ -8,7 +8,7 @@ import java.util.List;
 
 
 
-@Entity
+@Entity(name = "report")
 @Table(schema = "dbo")
 
 public class Report {

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface ReportRepo extends JpaRepository<Report,Integer> {
-    @Query("select r.id from Report r")
+    @Query("select r.id from report r")
     List<Integer> getReportsIds();
 
     List<Report> findByReason(String reason);
